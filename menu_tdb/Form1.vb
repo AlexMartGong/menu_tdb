@@ -17,7 +17,7 @@
         End If
     End Sub
 
-    Private Sub btn_noForeingKeys_Click(sender As Object, e As EventArgs) Handles btn_noForeingKeys.Click
+    Private Sub btn_noForeingKeys_Click(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
         showSubmenu(panel_noforeingKeys)
     End Sub
 
@@ -25,14 +25,14 @@
         showSubmenu(panel_foreingKeys)
     End Sub
 
-    Private Sub btn_docente_Click(sender As Object, e As EventArgs) Handles btn_docente.Click
-        openChildForm(New Form2())
+    Private Sub btn_docente_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
+        openChildForm(New Form2)
 
         hideSubmenu()
     End Sub
 
-    Private Sub btn_carrera_Click(sender As Object, e As EventArgs) Handles btn_carrera.Click
-        openChildForm(New Form3())
+    Private Sub btn_carrera_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        openChildForm(New formDocenteEliminar)
 
         hideSubmenu()
     End Sub
@@ -48,6 +48,21 @@
         panelChildForm.Tag = childForm
         childForm.BringToFront()
         childForm.Show()
+    End Sub
+
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        openChildForm(New Form3)
+
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnMostrar_Click(sender As Object, e As EventArgs) Handles btnMostrar.Click
+        openChildForm(New formMostrarDocentes)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnDocente(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
+
     End Sub
 
 End Class

@@ -22,80 +22,29 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Button4 = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
-        Button1 = New Button()
-        DataGridView1 = New DataGridView()
+        btnInsertar = New Button()
         btnExit = New Button()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        txtNombre = New TextBox()
+        txtPerfil = New TextBox()
+        txtIdDocente = New TextBox()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
         SuspendLayout()
         ' 
-        ' Button4
+        ' btnInsertar
         ' 
-        Button4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button4.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Button4.ForeColor = Color.White
-        Button4.Location = New Point(1376, 250)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(112, 34)
-        Button4.TabIndex = 9
-        Button4.Text = "Mostrar"
-        Button4.UseVisualStyleBackColor = False
-        ' 
-        ' Button3
-        ' 
-        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button3.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Button3.ForeColor = Color.White
-        Button3.Location = New Point(1376, 188)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(112, 34)
-        Button3.TabIndex = 8
-        Button3.Text = "Buscar"
-        Button3.UseVisualStyleBackColor = False
-        ' 
-        ' Button2
-        ' 
-        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button2.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Button2.ForeColor = Color.White
-        Button2.Location = New Point(1376, 132)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(112, 34)
-        Button2.TabIndex = 7
-        Button2.Text = "Modificar"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button1
-        ' 
-        Button1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button1.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1376, 70)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(112, 34)
-        Button1.TabIndex = 6
-        Button1.Text = "Insertar"
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(12, 70)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 62
-        DataGridView1.Size = New Size(1358, 735)
-        DataGridView1.TabIndex = 5
+        btnInsertar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnInsertar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnInsertar.FlatStyle = FlatStyle.Flat
+        btnInsertar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnInsertar.ForeColor = Color.White
+        btnInsertar.Location = New Point(1308, 384)
+        btnInsertar.Name = "btnInsertar"
+        btnInsertar.Size = New Size(180, 40)
+        btnInsertar.TabIndex = 6
+        btnInsertar.Text = "Insertar"
+        btnInsertar.UseVisualStyleBackColor = False
         ' 
         ' btnExit
         ' 
@@ -103,12 +52,69 @@ Partial Class Form2
         btnExit.FlatStyle = FlatStyle.Flat
         btnExit.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnExit.ForeColor = Color.White
-        btnExit.Location = New Point(12, 12)
+        btnExit.Location = New Point(12, 30)
         btnExit.Name = "btnExit"
-        btnExit.Size = New Size(112, 52)
+        btnExit.Size = New Size(120, 50)
         btnExit.TabIndex = 10
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
+        ' 
+        ' txtNombre
+        ' 
+        txtNombre.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtNombre.Font = New Font("Roboto", 10F)
+        txtNombre.Location = New Point(12, 265)
+        txtNombre.Name = "txtNombre"
+        txtNombre.Size = New Size(1476, 32)
+        txtNombre.TabIndex = 11
+        ' 
+        ' txtPerfil
+        ' 
+        txtPerfil.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtPerfil.Font = New Font("Roboto", 10F)
+        txtPerfil.Location = New Point(12, 346)
+        txtPerfil.Name = "txtPerfil"
+        txtPerfil.Size = New Size(1476, 32)
+        txtPerfil.TabIndex = 13
+        ' 
+        ' txtIdDocente
+        ' 
+        txtIdDocente.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtIdDocente.Font = New Font("Roboto", 10F)
+        txtIdDocente.Location = New Point(12, 183)
+        txtIdDocente.Name = "txtIdDocente"
+        txtIdDocente.Size = New Size(1476, 32)
+        txtIdDocente.TabIndex = 14
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        Label3.Location = New Point(34, 321)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(58, 22)
+        Label3.TabIndex = 17
+        Label3.Text = "Perfil"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        Label4.Location = New Point(34, 158)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(134, 22)
+        Label4.TabIndex = 15
+        Label4.Text = "Folio Docente"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        Label5.Location = New Point(34, 240)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(81, 22)
+        Label5.TabIndex = 16
+        Label5.Text = "Nombre"
         ' 
         ' Form2
         ' 
@@ -116,23 +122,26 @@ Partial Class Form2
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
+        Controls.Add(Label3)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(txtIdDocente)
+        Controls.Add(txtPerfil)
+        Controls.Add(txtNombre)
         Controls.Add(btnExit)
-        Controls.Add(Button4)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(DataGridView1)
+        Controls.Add(btnInsertar)
         FormBorderStyle = FormBorderStyle.None
         Name = "Form2"
         Text = "Form2"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnInsertar As Button
     Friend WithEvents btnExit As Button
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtPerfil As TextBox
+    Friend WithEvents txtIdDocente As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

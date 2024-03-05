@@ -31,20 +31,21 @@ Partial Class Form1
         Button9 = New Button()
         btn_foreingKeys = New Button()
         panel_noforeingKeys = New Panel()
-        Button4 = New Button()
-        Button3 = New Button()
-        btn_carrera = New Button()
-        btn_docente = New Button()
-        btn_noForeingKeys = New Button()
+        btnMostrar = New Button()
+        btnBuscar = New Button()
+        btnEliminar = New Button()
+        btnInsertar = New Button()
+        btnNoforenKey = New Button()
         panel_logo = New Panel()
-        PictureBox1 = New PictureBox()
+        picLogo = New PictureBox()
         panelChildForm = New Panel()
         PictureBox2 = New PictureBox()
+        btnModificar = New Button()
         panel_menu.SuspendLayout()
         panel_foreingKeys.SuspendLayout()
         panel_noforeingKeys.SuspendLayout()
         panel_logo.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picLogo, ComponentModel.ISupportInitialize).BeginInit()
         panelChildForm.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -56,7 +57,7 @@ Partial Class Form1
         panel_menu.Controls.Add(panel_foreingKeys)
         panel_menu.Controls.Add(btn_foreingKeys)
         panel_menu.Controls.Add(panel_noforeingKeys)
-        panel_menu.Controls.Add(btn_noForeingKeys)
+        panel_menu.Controls.Add(btnNoforenKey)
         panel_menu.Controls.Add(panel_logo)
         panel_menu.Dock = DockStyle.Left
         panel_menu.Location = New Point(0, 0)
@@ -72,7 +73,7 @@ Partial Class Form1
         panel_foreingKeys.Controls.Add(Button8)
         panel_foreingKeys.Controls.Add(Button9)
         panel_foreingKeys.Dock = DockStyle.Top
-        panel_foreingKeys.Location = New Point(0, 449)
+        panel_foreingKeys.Location = New Point(0, 495)
         panel_foreingKeys.Name = "panel_foreingKeys"
         panel_foreingKeys.Size = New Size(350, 170)
         panel_foreingKeys.TabIndex = 4
@@ -143,7 +144,7 @@ Partial Class Form1
         btn_foreingKeys.FlatAppearance.BorderSize = 0
         btn_foreingKeys.FlatStyle = FlatStyle.Flat
         btn_foreingKeys.Font = New Font("Roboto", 10F)
-        btn_foreingKeys.Location = New Point(0, 404)
+        btn_foreingKeys.Location = New Point(0, 450)
         btn_foreingKeys.Name = "btn_foreingKeys"
         btn_foreingKeys.Padding = New Padding(10, 0, 0, 0)
         btn_foreingKeys.Size = New Size(350, 45)
@@ -155,110 +156,111 @@ Partial Class Form1
         ' panel_noforeingKeys
         ' 
         panel_noforeingKeys.BackColor = Color.WhiteSmoke
-        panel_noforeingKeys.Controls.Add(Button4)
-        panel_noforeingKeys.Controls.Add(Button3)
-        panel_noforeingKeys.Controls.Add(btn_carrera)
-        panel_noforeingKeys.Controls.Add(btn_docente)
+        panel_noforeingKeys.Controls.Add(btnModificar)
+        panel_noforeingKeys.Controls.Add(btnMostrar)
+        panel_noforeingKeys.Controls.Add(btnBuscar)
+        panel_noforeingKeys.Controls.Add(btnEliminar)
+        panel_noforeingKeys.Controls.Add(btnInsertar)
         panel_noforeingKeys.Dock = DockStyle.Top
         panel_noforeingKeys.Location = New Point(0, 234)
         panel_noforeingKeys.Name = "panel_noforeingKeys"
-        panel_noforeingKeys.Size = New Size(350, 170)
+        panel_noforeingKeys.Size = New Size(350, 216)
         panel_noforeingKeys.TabIndex = 2
         ' 
-        ' Button4
+        ' btnMostrar
         ' 
-        Button4.Dock = DockStyle.Top
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Roboto", 9F)
-        Button4.Location = New Point(0, 120)
-        Button4.Name = "Button4"
-        Button4.Padding = New Padding(35, 0, 0, 0)
-        Button4.Size = New Size(350, 40)
-        Button4.TabIndex = 3
-        Button4.Text = "Button4"
-        Button4.TextAlign = ContentAlignment.MiddleLeft
-        Button4.UseVisualStyleBackColor = True
+        btnMostrar.Dock = DockStyle.Top
+        btnMostrar.FlatAppearance.BorderSize = 0
+        btnMostrar.FlatStyle = FlatStyle.Flat
+        btnMostrar.Font = New Font("Roboto", 9F)
+        btnMostrar.Location = New Point(0, 120)
+        btnMostrar.Name = "btnMostrar"
+        btnMostrar.Padding = New Padding(35, 0, 0, 0)
+        btnMostrar.Size = New Size(350, 40)
+        btnMostrar.TabIndex = 3
+        btnMostrar.Text = "Mostrar"
+        btnMostrar.TextAlign = ContentAlignment.MiddleLeft
+        btnMostrar.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' btnBuscar
         ' 
-        Button3.Dock = DockStyle.Top
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Roboto", 9F)
-        Button3.Location = New Point(0, 80)
-        Button3.Name = "Button3"
-        Button3.Padding = New Padding(35, 0, 0, 0)
-        Button3.Size = New Size(350, 40)
-        Button3.TabIndex = 2
-        Button3.Text = "Button3"
-        Button3.TextAlign = ContentAlignment.MiddleLeft
-        Button3.UseVisualStyleBackColor = True
+        btnBuscar.Dock = DockStyle.Top
+        btnBuscar.FlatAppearance.BorderSize = 0
+        btnBuscar.FlatStyle = FlatStyle.Flat
+        btnBuscar.Font = New Font("Roboto", 9F)
+        btnBuscar.Location = New Point(0, 80)
+        btnBuscar.Name = "btnBuscar"
+        btnBuscar.Padding = New Padding(35, 0, 0, 0)
+        btnBuscar.Size = New Size(350, 40)
+        btnBuscar.TabIndex = 2
+        btnBuscar.Text = "Buscar"
+        btnBuscar.TextAlign = ContentAlignment.MiddleLeft
+        btnBuscar.UseVisualStyleBackColor = True
         ' 
-        ' btn_carrera
+        ' btnEliminar
         ' 
-        btn_carrera.Dock = DockStyle.Top
-        btn_carrera.FlatAppearance.BorderSize = 0
-        btn_carrera.FlatStyle = FlatStyle.Flat
-        btn_carrera.Font = New Font("Roboto", 9F)
-        btn_carrera.Location = New Point(0, 40)
-        btn_carrera.Name = "btn_carrera"
-        btn_carrera.Padding = New Padding(35, 0, 0, 0)
-        btn_carrera.Size = New Size(350, 40)
-        btn_carrera.TabIndex = 1
-        btn_carrera.Text = "Carrera"
-        btn_carrera.TextAlign = ContentAlignment.MiddleLeft
-        btn_carrera.UseVisualStyleBackColor = True
+        btnEliminar.Dock = DockStyle.Top
+        btnEliminar.FlatAppearance.BorderSize = 0
+        btnEliminar.FlatStyle = FlatStyle.Flat
+        btnEliminar.Font = New Font("Roboto", 9F)
+        btnEliminar.Location = New Point(0, 40)
+        btnEliminar.Name = "btnEliminar"
+        btnEliminar.Padding = New Padding(35, 0, 0, 0)
+        btnEliminar.Size = New Size(350, 40)
+        btnEliminar.TabIndex = 1
+        btnEliminar.Text = "Baja"
+        btnEliminar.TextAlign = ContentAlignment.MiddleLeft
+        btnEliminar.UseVisualStyleBackColor = True
         ' 
-        ' btn_docente
+        ' btnInsertar
         ' 
-        btn_docente.Dock = DockStyle.Top
-        btn_docente.FlatAppearance.BorderSize = 0
-        btn_docente.FlatStyle = FlatStyle.Flat
-        btn_docente.Font = New Font("Roboto", 9F)
-        btn_docente.Location = New Point(0, 0)
-        btn_docente.Name = "btn_docente"
-        btn_docente.Padding = New Padding(35, 0, 0, 0)
-        btn_docente.Size = New Size(350, 40)
-        btn_docente.TabIndex = 0
-        btn_docente.Text = "Docente"
-        btn_docente.TextAlign = ContentAlignment.MiddleLeft
-        btn_docente.UseVisualStyleBackColor = True
+        btnInsertar.Dock = DockStyle.Top
+        btnInsertar.FlatAppearance.BorderSize = 0
+        btnInsertar.FlatStyle = FlatStyle.Flat
+        btnInsertar.Font = New Font("Roboto", 9F)
+        btnInsertar.Location = New Point(0, 0)
+        btnInsertar.Name = "btnInsertar"
+        btnInsertar.Padding = New Padding(35, 0, 0, 0)
+        btnInsertar.Size = New Size(350, 40)
+        btnInsertar.TabIndex = 0
+        btnInsertar.Text = "Insertar"
+        btnInsertar.TextAlign = ContentAlignment.MiddleLeft
+        btnInsertar.UseVisualStyleBackColor = True
         ' 
-        ' btn_noForeingKeys
+        ' btnNoforenKey
         ' 
-        btn_noForeingKeys.Dock = DockStyle.Top
-        btn_noForeingKeys.FlatAppearance.BorderSize = 0
-        btn_noForeingKeys.FlatStyle = FlatStyle.Flat
-        btn_noForeingKeys.Font = New Font("Roboto", 10F)
-        btn_noForeingKeys.Location = New Point(0, 189)
-        btn_noForeingKeys.Name = "btn_noForeingKeys"
-        btn_noForeingKeys.Padding = New Padding(10, 0, 0, 0)
-        btn_noForeingKeys.Size = New Size(350, 45)
-        btn_noForeingKeys.TabIndex = 1
-        btn_noForeingKeys.Text = "Sin llaves foráneas"
-        btn_noForeingKeys.TextAlign = ContentAlignment.MiddleLeft
-        btn_noForeingKeys.UseVisualStyleBackColor = True
+        btnNoforenKey.Dock = DockStyle.Top
+        btnNoforenKey.FlatAppearance.BorderSize = 0
+        btnNoforenKey.FlatStyle = FlatStyle.Flat
+        btnNoforenKey.Font = New Font("Roboto", 10F)
+        btnNoforenKey.Location = New Point(0, 189)
+        btnNoforenKey.Name = "btnNoforenKey"
+        btnNoforenKey.Padding = New Padding(10, 0, 0, 0)
+        btnNoforenKey.Size = New Size(350, 45)
+        btnNoforenKey.TabIndex = 1
+        btnNoforenKey.Text = "Docente"
+        btnNoforenKey.TextAlign = ContentAlignment.MiddleLeft
+        btnNoforenKey.UseVisualStyleBackColor = True
         ' 
         ' panel_logo
         ' 
         panel_logo.BackColor = Color.White
-        panel_logo.Controls.Add(PictureBox1)
+        panel_logo.Controls.Add(picLogo)
         panel_logo.Dock = DockStyle.Top
         panel_logo.Location = New Point(0, 0)
         panel_logo.Name = "panel_logo"
         panel_logo.Size = New Size(350, 189)
         panel_logo.TabIndex = 0
         ' 
-        ' PictureBox1
+        ' picLogo
         ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(12, 12)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(335, 171)
-        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
+        picLogo.Image = CType(resources.GetObject("picLogo.Image"), Image)
+        picLogo.Location = New Point(12, 12)
+        picLogo.Name = "picLogo"
+        picLogo.Size = New Size(335, 171)
+        picLogo.SizeMode = PictureBoxSizeMode.Zoom
+        picLogo.TabIndex = 0
+        picLogo.TabStop = False
         ' 
         ' panelChildForm
         ' 
@@ -282,6 +284,21 @@ Partial Class Form1
         PictureBox2.TabIndex = 2
         PictureBox2.TabStop = False
         ' 
+        ' btnModificar
+        ' 
+        btnModificar.Dock = DockStyle.Top
+        btnModificar.FlatAppearance.BorderSize = 0
+        btnModificar.FlatStyle = FlatStyle.Flat
+        btnModificar.Font = New Font("Roboto", 9F)
+        btnModificar.Location = New Point(0, 160)
+        btnModificar.Name = "btnModificar"
+        btnModificar.Padding = New Padding(35, 0, 0, 0)
+        btnModificar.Size = New Size(350, 40)
+        btnModificar.TabIndex = 4
+        btnModificar.Text = "Modificar"
+        btnModificar.TextAlign = ContentAlignment.MiddleLeft
+        btnModificar.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
@@ -296,7 +313,7 @@ Partial Class Form1
         panel_foreingKeys.ResumeLayout(False)
         panel_noforeingKeys.ResumeLayout(False)
         panel_logo.ResumeLayout(False)
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(picLogo, ComponentModel.ISupportInitialize).EndInit()
         panelChildForm.ResumeLayout(False)
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
@@ -304,20 +321,21 @@ Partial Class Form1
 
     Friend WithEvents panel_menu As Panel
     Friend WithEvents panel_logo As Panel
-    Friend WithEvents btn_noForeingKeys As Button
+    Friend WithEvents btnNoforenKey As Button
     Friend WithEvents panel_noforeingKeys As Panel
-    Friend WithEvents btn_docente As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents btn_carrera As Button
+    Friend WithEvents btnInsertar As Button
+    Friend WithEvents btnMostrar As Button
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents btnEliminar As Button
     Friend WithEvents panel_foreingKeys As Panel
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents btn_foreingKeys As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picLogo As PictureBox
     Friend WithEvents panelChildForm As Panel
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnModificar As Button
 
 End Class
