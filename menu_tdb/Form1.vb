@@ -26,14 +26,28 @@
     End Sub
 
     Private Sub btn_docente_Click(sender As Object, e As EventArgs) Handles btn_docente.Click
-
+        openChildForm(New Form2())
 
         hideSubmenu()
     End Sub
 
     Private Sub btn_carrera_Click(sender As Object, e As EventArgs) Handles btn_carrera.Click
-
+        openChildForm(New Form3())
 
         hideSubmenu()
     End Sub
+
+    Private currentForm As Form = Nothing
+    Private Sub openChildForm(childForm As Form)
+        If currentForm IsNot Nothing Then currentForm.Close()
+        currentForm = childForm
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        panelChildForm.Controls.Add(childForm)
+        panelChildForm.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
+    End Sub
+
 End Class

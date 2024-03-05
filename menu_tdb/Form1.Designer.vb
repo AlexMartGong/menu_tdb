@@ -38,12 +38,14 @@ Partial Class Form1
         btn_noForeingKeys = New Button()
         panel_logo = New Panel()
         PictureBox1 = New PictureBox()
+        panelChildForm = New Panel()
         PictureBox2 = New PictureBox()
         panel_menu.SuspendLayout()
         panel_foreingKeys.SuspendLayout()
         panel_noforeingKeys.SuspendLayout()
         panel_logo.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        panelChildForm.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -80,6 +82,7 @@ Partial Class Form1
         Button6.Dock = DockStyle.Top
         Button6.FlatAppearance.BorderSize = 0
         Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Roboto", 9F)
         Button6.Location = New Point(0, 120)
         Button6.Name = "Button6"
         Button6.Padding = New Padding(35, 0, 0, 0)
@@ -94,6 +97,7 @@ Partial Class Form1
         Button7.Dock = DockStyle.Top
         Button7.FlatAppearance.BorderSize = 0
         Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Roboto", 9F)
         Button7.Location = New Point(0, 80)
         Button7.Name = "Button7"
         Button7.Padding = New Padding(35, 0, 0, 0)
@@ -108,6 +112,7 @@ Partial Class Form1
         Button8.Dock = DockStyle.Top
         Button8.FlatAppearance.BorderSize = 0
         Button8.FlatStyle = FlatStyle.Flat
+        Button8.Font = New Font("Roboto", 9F)
         Button8.Location = New Point(0, 40)
         Button8.Name = "Button8"
         Button8.Padding = New Padding(35, 0, 0, 0)
@@ -122,6 +127,7 @@ Partial Class Form1
         Button9.Dock = DockStyle.Top
         Button9.FlatAppearance.BorderSize = 0
         Button9.FlatStyle = FlatStyle.Flat
+        Button9.Font = New Font("Roboto", 9F)
         Button9.Location = New Point(0, 0)
         Button9.Name = "Button9"
         Button9.Padding = New Padding(35, 0, 0, 0)
@@ -136,6 +142,7 @@ Partial Class Form1
         btn_foreingKeys.Dock = DockStyle.Top
         btn_foreingKeys.FlatAppearance.BorderSize = 0
         btn_foreingKeys.FlatStyle = FlatStyle.Flat
+        btn_foreingKeys.Font = New Font("Roboto", 10F)
         btn_foreingKeys.Location = New Point(0, 404)
         btn_foreingKeys.Name = "btn_foreingKeys"
         btn_foreingKeys.Padding = New Padding(10, 0, 0, 0)
@@ -163,6 +170,7 @@ Partial Class Form1
         Button4.Dock = DockStyle.Top
         Button4.FlatAppearance.BorderSize = 0
         Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Roboto", 9F)
         Button4.Location = New Point(0, 120)
         Button4.Name = "Button4"
         Button4.Padding = New Padding(35, 0, 0, 0)
@@ -177,6 +185,7 @@ Partial Class Form1
         Button3.Dock = DockStyle.Top
         Button3.FlatAppearance.BorderSize = 0
         Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Roboto", 9F)
         Button3.Location = New Point(0, 80)
         Button3.Name = "Button3"
         Button3.Padding = New Padding(35, 0, 0, 0)
@@ -191,6 +200,7 @@ Partial Class Form1
         btn_carrera.Dock = DockStyle.Top
         btn_carrera.FlatAppearance.BorderSize = 0
         btn_carrera.FlatStyle = FlatStyle.Flat
+        btn_carrera.Font = New Font("Roboto", 9F)
         btn_carrera.Location = New Point(0, 40)
         btn_carrera.Name = "btn_carrera"
         btn_carrera.Padding = New Padding(35, 0, 0, 0)
@@ -205,6 +215,7 @@ Partial Class Form1
         btn_docente.Dock = DockStyle.Top
         btn_docente.FlatAppearance.BorderSize = 0
         btn_docente.FlatStyle = FlatStyle.Flat
+        btn_docente.Font = New Font("Roboto", 9F)
         btn_docente.Location = New Point(0, 0)
         btn_docente.Name = "btn_docente"
         btn_docente.Padding = New Padding(35, 0, 0, 0)
@@ -219,6 +230,7 @@ Partial Class Form1
         btn_noForeingKeys.Dock = DockStyle.Top
         btn_noForeingKeys.FlatAppearance.BorderSize = 0
         btn_noForeingKeys.FlatStyle = FlatStyle.Flat
+        btn_noForeingKeys.Font = New Font("Roboto", 10F)
         btn_noForeingKeys.Location = New Point(0, 189)
         btn_noForeingKeys.Name = "btn_noForeingKeys"
         btn_noForeingKeys.Padding = New Padding(10, 0, 0, 0)
@@ -248,23 +260,34 @@ Partial Class Form1
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
+        ' panelChildForm
+        ' 
+        panelChildForm.BackColor = Color.White
+        panelChildForm.BorderStyle = BorderStyle.FixedSingle
+        panelChildForm.Controls.Add(PictureBox2)
+        panelChildForm.Dock = DockStyle.Fill
+        panelChildForm.Location = New Point(350, 0)
+        panelChildForm.Name = "panelChildForm"
+        panelChildForm.Size = New Size(1128, 784)
+        panelChildForm.TabIndex = 2
+        ' 
         ' PictureBox2
         ' 
         PictureBox2.Dock = DockStyle.Right
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(931, 0)
+        PictureBox2.Location = New Point(733, 0)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(447, 784)
+        PictureBox2.Size = New Size(393, 782)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 1
+        PictureBox2.TabIndex = 2
         PictureBox2.TabStop = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1378, 784)
-        Controls.Add(PictureBox2)
+        ClientSize = New Size(1478, 784)
+        Controls.Add(panelChildForm)
         Controls.Add(panel_menu)
         MinimumSize = New Size(1400, 840)
         Name = "Form1"
@@ -274,6 +297,7 @@ Partial Class Form1
         panel_noforeingKeys.ResumeLayout(False)
         panel_logo.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        panelChildForm.ResumeLayout(False)
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -293,6 +317,7 @@ Partial Class Form1
     Friend WithEvents Button9 As Button
     Friend WithEvents btn_foreingKeys As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents panelChildForm As Panel
     Friend WithEvents PictureBox2 As PictureBox
 
 End Class
