@@ -31,6 +31,7 @@ Partial Class Form1
         Button9 = New Button()
         btn_foreingKeys = New Button()
         panel_noforeingKeys = New Panel()
+        btnModificar = New Button()
         btnMostrar = New Button()
         btnBuscar = New Button()
         btnEliminar = New Button()
@@ -40,7 +41,6 @@ Partial Class Form1
         picLogo = New PictureBox()
         panelChildForm = New Panel()
         PictureBox2 = New PictureBox()
-        btnModificar = New Button()
         panel_menu.SuspendLayout()
         panel_foreingKeys.SuspendLayout()
         panel_noforeingKeys.SuspendLayout()
@@ -167,6 +167,21 @@ Partial Class Form1
         panel_noforeingKeys.Size = New Size(350, 216)
         panel_noforeingKeys.TabIndex = 2
         ' 
+        ' btnModificar
+        ' 
+        btnModificar.Dock = DockStyle.Top
+        btnModificar.FlatAppearance.BorderSize = 0
+        btnModificar.FlatStyle = FlatStyle.Flat
+        btnModificar.Font = New Font("Roboto", 9F)
+        btnModificar.Location = New Point(0, 160)
+        btnModificar.Name = "btnModificar"
+        btnModificar.Padding = New Padding(35, 0, 0, 0)
+        btnModificar.Size = New Size(350, 40)
+        btnModificar.TabIndex = 4
+        btnModificar.Text = "Modificar"
+        btnModificar.TextAlign = ContentAlignment.MiddleLeft
+        btnModificar.UseVisualStyleBackColor = True
+        ' 
         ' btnMostrar
         ' 
         btnMostrar.Dock = DockStyle.Top
@@ -283,21 +298,6 @@ Partial Class Form1
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 2
         PictureBox2.TabStop = False
-        ' 
-        ' btnModificar
-        ' 
-        btnModificar.Dock = DockStyle.Top
-        btnModificar.FlatAppearance.BorderSize = 0
-        btnModificar.FlatStyle = FlatStyle.Flat
-        btnModificar.Font = New Font("Roboto", 9F)
-        btnModificar.Location = New Point(0, 160)
-        btnModificar.Name = "btnModificar"
-        btnModificar.Padding = New Padding(35, 0, 0, 0)
-        btnModificar.Size = New Size(350, 40)
-        btnModificar.TabIndex = 4
-        btnModificar.Text = "Modificar"
-        btnModificar.TextAlign = ContentAlignment.MiddleLeft
-        btnModificar.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 

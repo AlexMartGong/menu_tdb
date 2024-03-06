@@ -17,9 +17,9 @@
         End If
     End Sub
 
-    Private Sub btn_noForeingKeys_Click(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
-        showSubmenu(panel_noforeingKeys)
-    End Sub
+    ''Private Sub btn_noForeingKeys_Click(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
+    ''showSubmenu(panel_noforeingKeys)
+    ''End Sub
 
     Private Sub btn_foreingKeys_Click(sender As Object, e As EventArgs) Handles btn_foreingKeys.Click
         showSubmenu(panel_foreingKeys)
@@ -62,7 +62,11 @@
     End Sub
 
     Private Sub btnDocente(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
-
+        showSubmenu(panel_noforeingKeys)
     End Sub
 
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+        openChildForm(New formDocenteModificar)
+        hideSubmenu()
+    End Sub
 End Class
