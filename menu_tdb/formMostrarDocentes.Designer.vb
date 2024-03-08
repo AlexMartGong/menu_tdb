@@ -22,19 +22,22 @@ Partial Class formMostrarDocentes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMostrarDocentes))
         dgvDatos = New DataGridView()
         btnExit = New Button()
+        PictureBox1 = New PictureBox()
         CType(dgvDatos, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' dgvDatos
         ' 
         dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDatos.Location = New Point(12, 68)
+        dgvDatos.Location = New Point(12, 218)
         dgvDatos.Name = "dgvDatos"
         dgvDatos.RowHeadersWidth = 62
-        dgvDatos.Size = New Size(1476, 760)
+        dgvDatos.Size = New Size(1476, 610)
         dgvDatos.TabIndex = 0
         ' 
         ' btnExit
@@ -50,21 +53,35 @@ Partial Class formMostrarDocentes
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(12, 68)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(1476, 144)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 13
+        PictureBox1.TabStop = False
+        ' 
         ' formMostrarDocentes
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
+        Controls.Add(PictureBox1)
         Controls.Add(btnExit)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
         Name = "formMostrarDocentes"
         Text = "formMostrarDocentes"
         CType(dgvDatos, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents dgvDatos As DataGridView
     Friend WithEvents btnExit As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

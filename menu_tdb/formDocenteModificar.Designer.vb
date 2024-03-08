@@ -22,6 +22,7 @@ Partial Class formDocenteModificar
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formDocenteModificar))
         Label3 = New Label()
         Label5 = New Label()
         Label4 = New Label()
@@ -30,13 +31,15 @@ Partial Class formDocenteModificar
         txtNombre = New TextBox()
         btnExit = New Button()
         btnModificar = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label3.Location = New Point(34, 303)
+        Label3.Location = New Point(34, 426)
         Label3.Name = "Label3"
         Label3.Size = New Size(58, 22)
         Label3.TabIndex = 25
@@ -46,7 +49,7 @@ Partial Class formDocenteModificar
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label5.Location = New Point(34, 222)
+        Label5.Location = New Point(34, 345)
         Label5.Name = "Label5"
         Label5.Size = New Size(81, 22)
         Label5.TabIndex = 24
@@ -56,7 +59,7 @@ Partial Class formDocenteModificar
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label4.Location = New Point(34, 140)
+        Label4.Location = New Point(34, 263)
         Label4.Name = "Label4"
         Label4.Size = New Size(134, 22)
         Label4.TabIndex = 23
@@ -66,7 +69,7 @@ Partial Class formDocenteModificar
         ' 
         txtIdDocente.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtIdDocente.Font = New Font("Roboto", 10F)
-        txtIdDocente.Location = New Point(12, 165)
+        txtIdDocente.Location = New Point(12, 288)
         txtIdDocente.Name = "txtIdDocente"
         txtIdDocente.Size = New Size(1476, 32)
         txtIdDocente.TabIndex = 22
@@ -75,7 +78,7 @@ Partial Class formDocenteModificar
         ' 
         txtPerfil.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtPerfil.Font = New Font("Roboto", 10F)
-        txtPerfil.Location = New Point(12, 328)
+        txtPerfil.Location = New Point(12, 451)
         txtPerfil.Name = "txtPerfil"
         txtPerfil.Size = New Size(1476, 32)
         txtPerfil.TabIndex = 21
@@ -84,7 +87,7 @@ Partial Class formDocenteModificar
         ' 
         txtNombre.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtNombre.Font = New Font("Roboto", 10F)
-        txtNombre.Location = New Point(12, 247)
+        txtNombre.Location = New Point(12, 370)
         txtNombre.Name = "txtNombre"
         txtNombre.Size = New Size(1476, 32)
         txtNombre.TabIndex = 20
@@ -109,12 +112,23 @@ Partial Class formDocenteModificar
         btnModificar.FlatStyle = FlatStyle.Flat
         btnModificar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnModificar.ForeColor = Color.White
-        btnModificar.Location = New Point(1308, 366)
+        btnModificar.Location = New Point(1308, 489)
         btnModificar.Name = "btnModificar"
         btnModificar.Size = New Size(180, 40)
         btnModificar.TabIndex = 18
         btnModificar.Text = "Modificar"
         btnModificar.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(12, 68)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(1476, 163)
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
+        PictureBox1.TabIndex = 26
+        PictureBox1.TabStop = False
         ' 
         ' formDocenteModificar
         ' 
@@ -122,6 +136,7 @@ Partial Class formDocenteModificar
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
+        Controls.Add(PictureBox1)
         Controls.Add(Label3)
         Controls.Add(Label5)
         Controls.Add(Label4)
@@ -133,6 +148,7 @@ Partial Class formDocenteModificar
         FormBorderStyle = FormBorderStyle.None
         Name = "formDocenteModificar"
         Text = "formDocenteModificar"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -145,4 +161,5 @@ Partial Class formDocenteModificar
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents btnExit As Button
     Friend WithEvents btnModificar As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
