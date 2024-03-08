@@ -27,7 +27,7 @@ Partial Class Form2
         btnExit = New Button()
         txtNombre = New TextBox()
         txtPerfil = New TextBox()
-        txtIdDocente = New TextBox()
+        txtFolioDocente = New TextBox()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
@@ -80,14 +80,14 @@ Partial Class Form2
         txtPerfil.Size = New Size(1476, 32)
         txtPerfil.TabIndex = 13
         ' 
-        ' txtIdDocente
+        ' txtFolioDocente
         ' 
-        txtIdDocente.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        txtIdDocente.Font = New Font("Roboto", 10F)
-        txtIdDocente.Location = New Point(12, 294)
-        txtIdDocente.Name = "txtIdDocente"
-        txtIdDocente.Size = New Size(1476, 32)
-        txtIdDocente.TabIndex = 14
+        txtFolioDocente.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtFolioDocente.Font = New Font("Roboto", 10F)
+        txtFolioDocente.Location = New Point(12, 294)
+        txtFolioDocente.Name = "txtFolioDocente"
+        txtFolioDocente.Size = New Size(1476, 32)
+        txtFolioDocente.TabIndex = 14
         ' 
         ' Label3
         ' 
@@ -140,7 +140,7 @@ Partial Class Form2
         Controls.Add(Label3)
         Controls.Add(Label5)
         Controls.Add(Label4)
-        Controls.Add(txtIdDocente)
+        Controls.Add(txtFolioDocente)
         Controls.Add(txtPerfil)
         Controls.Add(txtNombre)
         Controls.Add(btnExit)
@@ -156,7 +156,7 @@ Partial Class Form2
     Friend WithEvents btnExit As Button
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtPerfil As TextBox
-    Friend WithEvents txtIdDocente As TextBox
+    Friend WithEvents txtFolioDocente As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
