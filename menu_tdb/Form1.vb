@@ -1,6 +1,19 @@
-﻿Public Class Form1
+﻿Imports MySql.Data.MySqlClient
+
+Public Class Form1
+    Dim adCon As MySqlConnection
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
+
+        Try
+            adCon = New MySqlConnection(cadena)
+            adCon.Open()
+        Catch ex As Exception
+            MsgBox(ex.Message, "Error al conectar la base de datos")
+        Finally
+            adCon.Close()
+        End Try
+
     End Sub
 
     Private Sub hideSubmenu()
