@@ -17,24 +17,8 @@
         End If
     End Sub
 
-    ''Private Sub btn_noForeingKeys_Click(sender As Object, e As EventArgs) Handles btnNoforenKey.Click
-    ''showSubmenu(panel_noforeingKeys)
-    ''End Sub
-
-    Private Sub btn_foreingKeys_Click(sender As Object, e As EventArgs) Handles btn_foreingKeys.Click
+    Private Sub btnCarre_Click(sender As Object, e As EventArgs) Handles btnCarrera.Click
         showSubmenu(panel_foreingKeys)
-    End Sub
-
-    Private Sub btn_docente_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
-        openChildForm(New Form2)
-
-        hideSubmenu()
-    End Sub
-
-    Private Sub btn_carrera_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        openChildForm(New formDocenteEliminar)
-
-        hideSubmenu()
     End Sub
 
     Private currentForm As Form = Nothing
@@ -67,6 +51,16 @@
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         openChildForm(New formDocenteModificar)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
+        openChildForm(New Form2)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnBaja_Click(sender As Object, e As EventArgs) Handles btnBaja.Click
+        openChildForm(New formDocenteEliminar)
         hideSubmenu()
     End Sub
 End Class

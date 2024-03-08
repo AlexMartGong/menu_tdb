@@ -29,12 +29,12 @@ Partial Class Form1
         Button7 = New Button()
         Button8 = New Button()
         Button9 = New Button()
-        btn_foreingKeys = New Button()
+        btnCarrera = New Button()
         panel_noforeingKeys = New Panel()
         btnModificar = New Button()
         btnMostrar = New Button()
         btnBuscar = New Button()
-        btnEliminar = New Button()
+        btnBaja = New Button()
         btnInsertar = New Button()
         btnNoforenKey = New Button()
         panel_logo = New Panel()
@@ -55,7 +55,7 @@ Partial Class Form1
         panel_menu.AutoScroll = True
         panel_menu.BackColor = Color.White
         panel_menu.Controls.Add(panel_foreingKeys)
-        panel_menu.Controls.Add(btn_foreingKeys)
+        panel_menu.Controls.Add(btnCarrera)
         panel_menu.Controls.Add(panel_noforeingKeys)
         panel_menu.Controls.Add(btnNoforenKey)
         panel_menu.Controls.Add(panel_logo)
@@ -138,20 +138,20 @@ Partial Class Form1
         Button9.TextAlign = ContentAlignment.MiddleLeft
         Button9.UseVisualStyleBackColor = True
         ' 
-        ' btn_foreingKeys
+        ' btnCarrera
         ' 
-        btn_foreingKeys.Dock = DockStyle.Top
-        btn_foreingKeys.FlatAppearance.BorderSize = 0
-        btn_foreingKeys.FlatStyle = FlatStyle.Flat
-        btn_foreingKeys.Font = New Font("Roboto", 10F)
-        btn_foreingKeys.Location = New Point(0, 450)
-        btn_foreingKeys.Name = "btn_foreingKeys"
-        btn_foreingKeys.Padding = New Padding(10, 0, 0, 0)
-        btn_foreingKeys.Size = New Size(350, 45)
-        btn_foreingKeys.TabIndex = 3
-        btn_foreingKeys.Text = "Con llaves foráneas"
-        btn_foreingKeys.TextAlign = ContentAlignment.MiddleLeft
-        btn_foreingKeys.UseVisualStyleBackColor = True
+        btnCarrera.Dock = DockStyle.Top
+        btnCarrera.FlatAppearance.BorderSize = 0
+        btnCarrera.FlatStyle = FlatStyle.Flat
+        btnCarrera.Font = New Font("Roboto", 10F)
+        btnCarrera.Location = New Point(0, 450)
+        btnCarrera.Name = "btnCarrera"
+        btnCarrera.Padding = New Padding(10, 0, 0, 0)
+        btnCarrera.Size = New Size(350, 45)
+        btnCarrera.TabIndex = 3
+        btnCarrera.Text = "Carrera"
+        btnCarrera.TextAlign = ContentAlignment.MiddleLeft
+        btnCarrera.UseVisualStyleBackColor = True
         ' 
         ' panel_noforeingKeys
         ' 
@@ -159,7 +159,7 @@ Partial Class Form1
         panel_noforeingKeys.Controls.Add(btnModificar)
         panel_noforeingKeys.Controls.Add(btnMostrar)
         panel_noforeingKeys.Controls.Add(btnBuscar)
-        panel_noforeingKeys.Controls.Add(btnEliminar)
+        panel_noforeingKeys.Controls.Add(btnBaja)
         panel_noforeingKeys.Controls.Add(btnInsertar)
         panel_noforeingKeys.Dock = DockStyle.Top
         panel_noforeingKeys.Location = New Point(0, 234)
@@ -212,20 +212,20 @@ Partial Class Form1
         btnBuscar.TextAlign = ContentAlignment.MiddleLeft
         btnBuscar.UseVisualStyleBackColor = True
         ' 
-        ' btnEliminar
+        ' btnBaja
         ' 
-        btnEliminar.Dock = DockStyle.Top
-        btnEliminar.FlatAppearance.BorderSize = 0
-        btnEliminar.FlatStyle = FlatStyle.Flat
-        btnEliminar.Font = New Font("Roboto", 9F)
-        btnEliminar.Location = New Point(0, 40)
-        btnEliminar.Name = "btnEliminar"
-        btnEliminar.Padding = New Padding(35, 0, 0, 0)
-        btnEliminar.Size = New Size(350, 40)
-        btnEliminar.TabIndex = 1
-        btnEliminar.Text = "Baja"
-        btnEliminar.TextAlign = ContentAlignment.MiddleLeft
-        btnEliminar.UseVisualStyleBackColor = True
+        btnBaja.Dock = DockStyle.Top
+        btnBaja.FlatAppearance.BorderSize = 0
+        btnBaja.FlatStyle = FlatStyle.Flat
+        btnBaja.Font = New Font("Roboto", 9F)
+        btnBaja.Location = New Point(0, 40)
+        btnBaja.Name = "btnBaja"
+        btnBaja.Padding = New Padding(35, 0, 0, 0)
+        btnBaja.Size = New Size(350, 40)
+        btnBaja.TabIndex = 1
+        btnBaja.Text = "Baja"
+        btnBaja.TextAlign = ContentAlignment.MiddleLeft
+        btnBaja.UseVisualStyleBackColor = True
         ' 
         ' btnInsertar
         ' 
@@ -326,13 +326,13 @@ Partial Class Form1
     Friend WithEvents btnInsertar As Button
     Friend WithEvents btnMostrar As Button
     Friend WithEvents btnBuscar As Button
-    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnBaja As Button
     Friend WithEvents panel_foreingKeys As Panel
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button9 As Button
-    Friend WithEvents btn_foreingKeys As Button
+    Friend WithEvents btnCarrera As Button
     Friend WithEvents picLogo As PictureBox
     Friend WithEvents panelChildForm As Panel
     Friend WithEvents PictureBox2 As PictureBox
