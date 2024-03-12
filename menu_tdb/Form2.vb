@@ -21,9 +21,7 @@ Public Class Form2
     End Sub
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
-
         Try
-
             adCon.Open()
             cm = New MySqlCommand
             cm.Connection = adCon
@@ -40,9 +38,6 @@ Public Class Form2
         Finally
             adCon.Close()
         End Try
-
-
-
     End Sub
 
 

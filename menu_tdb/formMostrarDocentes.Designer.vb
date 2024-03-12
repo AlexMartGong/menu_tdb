@@ -34,10 +34,10 @@ Partial Class formMostrarDocentes
         ' 
         dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDatos.Location = New Point(12, 218)
+        dgvDatos.Location = New Point(0, 230)
         dgvDatos.Name = "dgvDatos"
         dgvDatos.RowHeadersWidth = 62
-        dgvDatos.Size = New Size(1476, 610)
+        dgvDatos.Size = New Size(1500, 610)
         dgvDatos.TabIndex = 0
         ' 
         ' btnExit
@@ -59,7 +59,7 @@ Partial Class formMostrarDocentes
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(12, 68)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1476, 144)
+        PictureBox1.Size = New Size(1427, 144)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 13
         PictureBox1.TabStop = False
