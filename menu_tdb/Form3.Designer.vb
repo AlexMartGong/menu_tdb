@@ -25,7 +25,7 @@ Partial Class Form3
         dgvDatos = New DataGridView()
         btnBuscar = New Button()
         btnExit = New Button()
-        TextBox1 = New TextBox()
+        txtFiltrar = New TextBox()
         lblBuscar = New Label()
         CType(dgvDatos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -67,14 +67,14 @@ Partial Class Form3
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
         ' 
-        ' TextBox1
+        ' txtFiltrar
         ' 
-        TextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        TextBox1.Font = New Font("Roboto", 10F)
-        TextBox1.Location = New Point(12, 169)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(1290, 32)
-        TextBox1.TabIndex = 12
+        txtFiltrar.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtFiltrar.Font = New Font("Roboto", 10F)
+        txtFiltrar.Location = New Point(12, 169)
+        txtFiltrar.Name = "txtFiltrar"
+        txtFiltrar.Size = New Size(1290, 32)
+        txtFiltrar.TabIndex = 12
         ' 
         ' lblBuscar
         ' 
@@ -93,7 +93,7 @@ Partial Class Form3
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
         Controls.Add(lblBuscar)
-        Controls.Add(TextBox1)
+        Controls.Add(txtFiltrar)
         Controls.Add(btnExit)
         Controls.Add(btnBuscar)
         Controls.Add(dgvDatos)
@@ -108,6 +108,6 @@ Partial Class Form3
     Friend WithEvents dgvDatos As DataGridView
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtFiltrar As TextBox
     Friend WithEvents lblBuscar As Label
 End Class
