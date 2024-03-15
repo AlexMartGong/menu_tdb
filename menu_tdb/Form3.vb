@@ -33,8 +33,7 @@ Public Class Form3
                     da.Fill(ds, "entidades")
                     dgvDatos.DataSource = ds.Tables("entidades")
                 Else
-                    ' Si no es un número, busca por nombre.
-                    Dim sentencia As String = "call spBuscarDocentePorNombre(" & txtFiltrar.Text & ")"
+                    Dim sentencia As String = "call spBuscarDocentePorNombre('" & txtFiltrar.Text & "')"
                     adCon.Open()
                     da = New MySqlDataAdapter(sentencia, adCon)
                     Dim ds As New DataSet
