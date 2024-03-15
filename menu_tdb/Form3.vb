@@ -22,30 +22,18 @@ Public Class Form3
 
     Private Sub txtFiltrar_TextChanged(sender As Object, e As EventArgs) Handles txtFiltrar.TextChanged
         dgvDatos.DataSource = Nothing
-        If txtFiltrar.Text.Length >= 1 Then
-            Try
-                Dim folio As Integer
-                If Integer.TryParse(txtFiltrar.Text, folio) Then
-                    Dim sentencia As String = "call spBuscarDocentePorFolio(" & CInt(txtFiltrar.Text) & ")"
-                    adCon.Open()
-                    da = New MySqlDataAdapter(sentencia, adCon)
-                    Dim ds As New DataSet
-                    da.Fill(ds, "entidades")
-                    dgvDatos.DataSource = ds.Tables("entidades")
-                Else
-                    Dim sentencia As String = "call spBuscarDocentePorNombre('" & txtFiltrar.Text & "')"
-                    adCon.Open()
-                    da = New MySqlDataAdapter(sentencia, adCon)
-                    Dim ds As New DataSet
-                    da.Fill(ds, "entidades")
-                    dgvDatos.DataSource = ds.Tables("entidades")
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message, MsgBoxStyle.Critical, "Error al buscar docente")
-            Finally
-                adCon.Close()
-            End Try
-        End If
+        Try
+            Dim sentencia As String = "call spDocentesFiltrar('" & txtFiltrar.Text & "')"
+            adCon.Open()
+            da = New MySqlDataAdapter(sentencia, adCon)
+            Dim ds As New DataSet
+            da.Fill(ds, "entidades")
+            dgvDatos.DataSource = ds.Tables("entidades")
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical, "Error al buscar docente")
+        Finally
+            adCon.Close()
+        End Try
     End Sub
 
 End Class

@@ -37,7 +37,12 @@ Public Class formDocenteEliminar
         Finally
             adCon.Close()
         End Try
+        LimpiarCampos()
     End Sub
 
+    Private Sub LimpiarCampos()
+        txtFolioDocente.Text = ""
+        cbsBaja.Text = ""
+    End Sub
 
 End Class

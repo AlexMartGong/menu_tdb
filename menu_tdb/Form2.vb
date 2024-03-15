@@ -38,6 +38,13 @@ Public Class Form2
         Finally
             adCon.Close()
         End Try
+        LimpiarCampos()
+    End Sub
+
+    Private Sub LimpiarCampos()
+        txtNombre.Text = ""
+        txtPerfil.Text = ""
+        txtFolioDocente.Text = ""
     End Sub
 
 End Class

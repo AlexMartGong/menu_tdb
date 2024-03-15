@@ -35,6 +35,7 @@ Public Class formDocenteModificar
         Finally
             adCon.Close()
         End Try
+        LimpiarCampos()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -65,6 +66,12 @@ Public Class formDocenteModificar
                 adCon.Close()
             End Try
         End If
+    End Sub
+
+    Private Sub LimpiarCampos()
+        txtNombre.Text = ""
+        txtPerfil.Text = ""
+        txtIdDocente.Text = ""
     End Sub
 
 End Class
