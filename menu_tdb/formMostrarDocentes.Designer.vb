@@ -34,10 +34,11 @@ Partial Class formMostrarDocentes
         ' 
         dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDatos.Location = New Point(0, 230)
+        dgvDatos.Location = New Point(0, 138)
+        dgvDatos.Margin = New Padding(2, 2, 2, 2)
         dgvDatos.Name = "dgvDatos"
         dgvDatos.RowHeadersWidth = 62
-        dgvDatos.Size = New Size(1500, 610)
+        dgvDatos.Size = New Size(1050, 366)
         dgvDatos.TabIndex = 0
         ' 
         ' btnExit
@@ -46,9 +47,10 @@ Partial Class formMostrarDocentes
         btnExit.FlatStyle = FlatStyle.Flat
         btnExit.Font = New Font("Roboto", 14F)
         btnExit.ForeColor = Color.White
-        btnExit.Location = New Point(12, 12)
+        btnExit.Location = New Point(8, 7)
+        btnExit.Margin = New Padding(2, 2, 2, 2)
         btnExit.Name = "btnExit"
-        btnExit.Size = New Size(112, 50)
+        btnExit.Size = New Size(78, 30)
         btnExit.TabIndex = 12
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
@@ -57,23 +59,25 @@ Partial Class formMostrarDocentes
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(12, 68)
+        PictureBox1.Location = New Point(8, 41)
+        PictureBox1.Margin = New Padding(2, 2, 2, 2)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1427, 144)
+        PictureBox1.Size = New Size(1031, 86)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 13
         PictureBox1.TabStop = False
         ' 
         ' formMostrarDocentes
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1500, 840)
+        ClientSize = New Size(1050, 504)
         Controls.Add(PictureBox1)
         Controls.Add(btnExit)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(2, 2, 2, 2)
         Name = "formMostrarDocentes"
         Text = "formMostrarDocentes"
         CType(dgvDatos, ComponentModel.ISupportInitialize).EndInit()

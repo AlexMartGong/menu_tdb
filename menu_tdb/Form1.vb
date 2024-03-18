@@ -19,6 +19,7 @@ Public Class Form1
     Private Sub hideSubmenu()
         panel_foreingKeys.Visible = False
         panel_noforeingKeys.Visible = False
+        pnlPeriodo.Visible = False
     End Sub
 
     Private Sub showSubmenu(submenu As Panel)
@@ -73,7 +74,47 @@ Public Class Form1
     End Sub
 
     Private Sub btnBaja_Click(sender As Object, e As EventArgs) Handles btnBaja.Click
-        openChildForm(New formDocenteEliminar)
+        openChildForm(New formCarreraBaja)
         hideSubmenu()
+    End Sub
+
+    Private Sub btnCarraraAgregar_Click(sender As Object, e As EventArgs) Handles btnCarraraAgregar.Click
+        openChildForm(New formCarreraAgregaer)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnCarraraBaja_Click(sender As Object, e As EventArgs) Handles btnCarraraBaja.Click
+        openChildForm(New formCarreraBaja)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnCarraraMostrar_Click(sender As Object, e As EventArgs) Handles btnCarraraMostrar.Click
+        openChildForm(New formCarraraMostrar)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnCarraraModificar_Click(sender As Object, e As EventArgs) Handles btnCarraraModificar.Click
+        openChildForm(New formCarreraModificar)
+        hideSubmenu()
+    End Sub
+
+    Private Sub btnPeriodo_Click(sender As Object, e As EventArgs) Handles btnPeriodo.Click
+        showSubmenu(pnlPeriodo)
+    End Sub
+
+    Private Sub btnPeriodoAgregar_Click(sender As Object, e As EventArgs) Handles btnPeriodoAgregar.Click
+
+    End Sub
+
+    Private Sub btnPeriodoBaja_Click(sender As Object, e As EventArgs) Handles btnPeriodoBaja.Click
+
+    End Sub
+
+    Private Sub btnPeriodoMostrar_Click(sender As Object, e As EventArgs) Handles btnPeriodoMostrar.Click
+
+    End Sub
+
+    Private Sub btnPeriodoModificar_Click(sender As Object, e As EventArgs) Handles btnPeriodoModificar.Click
+
     End Sub
 End Class
