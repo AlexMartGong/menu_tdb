@@ -33,10 +33,9 @@ Partial Class formCarraraMostrar
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(8, 29)
-        PictureBox1.Margin = New Padding(2)
+        PictureBox1.Location = New Point(11, 48)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1032, 86)
+        PictureBox1.Size = New Size(1474, 143)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 15
         PictureBox1.TabStop = False
@@ -45,22 +44,22 @@ Partial Class formCarraraMostrar
         ' 
         dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDatos.Location = New Point(0, 126)
-        dgvDatos.Margin = New Padding(2)
+        dgvDatos.Location = New Point(11, 210)
         dgvDatos.Name = "dgvDatos"
         dgvDatos.RowHeadersWidth = 62
-        dgvDatos.Size = New Size(1050, 366)
+        dgvDatos.Size = New Size(1474, 645)
         dgvDatos.TabIndex = 14
         ' 
         ' formCarraraMostrar
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1051, 520)
+        ClientSize = New Size(1501, 867)
         Controls.Add(PictureBox1)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 5, 4, 5)
         Name = "formCarraraMostrar"
         Text = "formCarraraMostrar"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()

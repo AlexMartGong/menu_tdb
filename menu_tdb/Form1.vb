@@ -85,7 +85,7 @@ Public Class Form1
 
     Private Sub btnCarraraBaja_Click(sender As Object, e As EventArgs) Handles btnCarraraBaja.Click
         openChildForm(New formCarreraBaja)
-        hideSubmenu()
+        hideSubmenu
     End Sub
 
     Private Sub btnCarraraMostrar_Click(sender As Object, e As EventArgs) Handles btnCarraraMostrar.Click
@@ -98,23 +98,37 @@ Public Class Form1
         hideSubmenu()
     End Sub
 
+    Private Sub btnCarreraBuscar_Click(sender As Object, e As EventArgs) Handles btnCarreraBuscar.Click
+        openChildForm(New formCarreraBuscar)
+        hideSubmenu()
+    End Sub
+
     Private Sub btnPeriodo_Click(sender As Object, e As EventArgs) Handles btnPeriodo.Click
         showSubmenu(pnlPeriodo)
     End Sub
 
     Private Sub btnPeriodoAgregar_Click(sender As Object, e As EventArgs) Handles btnPeriodoAgregar.Click
-
+        openChildForm(New formPeriodoAgregar)
+        hideSubmenu()
     End Sub
 
     Private Sub btnPeriodoBaja_Click(sender As Object, e As EventArgs) Handles btnPeriodoBaja.Click
-
+        openChildForm(New formPeriodoBaja)
+        hideSubmenu()
     End Sub
 
     Private Sub btnPeriodoMostrar_Click(sender As Object, e As EventArgs) Handles btnPeriodoMostrar.Click
-
+        openChildForm(New formPeriodoMostrar)
+        hideSubmenu()
     End Sub
 
     Private Sub btnPeriodoModificar_Click(sender As Object, e As EventArgs) Handles btnPeriodoModificar.Click
+        openChildForm(New formPeriodoModificar)
+        hideSubmenu()
+    End Sub
 
+    Private Sub btnPeriodoBuscar_Click(sender As Object, e As EventArgs) Handles btnPeriodoBuscar.Click
+        openChildForm(New formPeriodoBuscar)
+        hideSubmenu()
     End Sub
 End Class

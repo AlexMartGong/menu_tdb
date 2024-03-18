@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class formMostrarDocentes
+Partial Class formPeriodoMostrar
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,66 +22,50 @@ Partial Class formMostrarDocentes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formMostrarDocentes))
-        dgvDatos = New DataGridView()
-        btnExit = New Button()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formPeriodoMostrar))
         PictureBox1 = New PictureBox()
-        CType(dgvDatos, ComponentModel.ISupportInitialize).BeginInit()
+        dgvDatos = New DataGridView()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvDatos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' dgvDatos
-        ' 
-        dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDatos.Location = New Point(12, 230)
-        dgvDatos.Name = "dgvDatos"
-        dgvDatos.RowHeadersWidth = 62
-        dgvDatos.Size = New Size(1472, 598)
-        dgvDatos.TabIndex = 0
-        ' 
-        ' btnExit
-        ' 
-        btnExit.BackColor = Color.Red
-        btnExit.FlatStyle = FlatStyle.Flat
-        btnExit.Font = New Font("Roboto", 14F)
-        btnExit.ForeColor = Color.White
-        btnExit.Location = New Point(11, 12)
-        btnExit.Name = "btnExit"
-        btnExit.Size = New Size(111, 50)
-        btnExit.TabIndex = 12
-        btnExit.Text = "X"
-        btnExit.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(11, 68)
+        PictureBox1.Location = New Point(11, 34)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1473, 143)
+        PictureBox1.Size = New Size(1474, 143)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
-        PictureBox1.TabIndex = 13
+        PictureBox1.TabIndex = 17
         PictureBox1.TabStop = False
         ' 
-        ' formMostrarDocentes
+        ' dgvDatos
+        ' 
+        dgvDatos.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        dgvDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvDatos.Location = New Point(11, 196)
+        dgvDatos.Name = "dgvDatos"
+        dgvDatos.RowHeadersWidth = 62
+        dgvDatos.Size = New Size(1474, 632)
+        dgvDatos.TabIndex = 16
+        ' 
+        ' formPeriodoMostrar
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
         Controls.Add(PictureBox1)
-        Controls.Add(btnExit)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
-        Name = "formMostrarDocentes"
-        Text = "formMostrarDocentes"
-        CType(dgvDatos, ComponentModel.ISupportInitialize).EndInit()
+        Name = "formPeriodoMostrar"
+        Text = "formPeriodoMostrar"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvDatos, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents dgvDatos As DataGridView
-    Friend WithEvents btnExit As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents dgvDatos As DataGridView
 End Class
