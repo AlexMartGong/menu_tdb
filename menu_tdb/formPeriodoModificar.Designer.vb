@@ -50,9 +50,9 @@ Partial Class formPeriodoModificar
         Label5.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         Label5.Location = New Point(34, 345)
         Label5.Name = "Label5"
-        Label5.Size = New Size(64, 22)
+        Label5.Size = New Size(80, 22)
         Label5.TabIndex = 33
-        Label5.Text = "Fecha"
+        Label5.Text = "Periodo"
         ' 
         ' Label4
         ' 

@@ -73,7 +73,7 @@ Partial Class Form1
         panel_menu.Dock = DockStyle.Left
         panel_menu.Location = New Point(0, 0)
         panel_menu.Name = "panel_menu"
-        panel_menu.Size = New Size(350, 1112)
+        panel_menu.Size = New Size(350, 811)
         panel_menu.TabIndex = 0
         ' 
         ' pnlPeriodo
@@ -87,7 +87,7 @@ Partial Class Form1
         pnlPeriodo.Dock = DockStyle.Top
         pnlPeriodo.Location = New Point(0, 755)
         pnlPeriodo.Name = "pnlPeriodo"
-        pnlPeriodo.Size = New Size(350, 213)
+        pnlPeriodo.Size = New Size(324, 213)
         pnlPeriodo.TabIndex = 6
         ' 
         ' btnPeriodoBuscar
@@ -99,7 +99,7 @@ Partial Class Form1
         btnPeriodoBuscar.Location = New Point(0, 160)
         btnPeriodoBuscar.Name = "btnPeriodoBuscar"
         btnPeriodoBuscar.Padding = New Padding(34, 0, 0, 0)
-        btnPeriodoBuscar.Size = New Size(350, 40)
+        btnPeriodoBuscar.Size = New Size(324, 40)
         btnPeriodoBuscar.TabIndex = 4
         btnPeriodoBuscar.Text = "Buscar"
         btnPeriodoBuscar.TextAlign = ContentAlignment.MiddleLeft
@@ -114,7 +114,7 @@ Partial Class Form1
         btnPeriodoModificar.Location = New Point(0, 120)
         btnPeriodoModificar.Name = "btnPeriodoModificar"
         btnPeriodoModificar.Padding = New Padding(34, 0, 0, 0)
-        btnPeriodoModificar.Size = New Size(350, 40)
+        btnPeriodoModificar.Size = New Size(324, 40)
         btnPeriodoModificar.TabIndex = 3
         btnPeriodoModificar.Text = "Modificar"
         btnPeriodoModificar.TextAlign = ContentAlignment.MiddleLeft
@@ -129,7 +129,7 @@ Partial Class Form1
         btnPeriodoMostrar.Location = New Point(0, 80)
         btnPeriodoMostrar.Name = "btnPeriodoMostrar"
         btnPeriodoMostrar.Padding = New Padding(34, 0, 0, 0)
-        btnPeriodoMostrar.Size = New Size(350, 40)
+        btnPeriodoMostrar.Size = New Size(324, 40)
         btnPeriodoMostrar.TabIndex = 2
         btnPeriodoMostrar.Text = "Mostrar"
         btnPeriodoMostrar.TextAlign = ContentAlignment.MiddleLeft
@@ -144,7 +144,7 @@ Partial Class Form1
         btnPeriodoBaja.Location = New Point(0, 40)
         btnPeriodoBaja.Name = "btnPeriodoBaja"
         btnPeriodoBaja.Padding = New Padding(34, 0, 0, 0)
-        btnPeriodoBaja.Size = New Size(350, 40)
+        btnPeriodoBaja.Size = New Size(324, 40)
         btnPeriodoBaja.TabIndex = 1
         btnPeriodoBaja.Text = "Baja"
         btnPeriodoBaja.TextAlign = ContentAlignment.MiddleLeft
@@ -159,7 +159,7 @@ Partial Class Form1
         btnPeriodoAgregar.Location = New Point(0, 0)
         btnPeriodoAgregar.Name = "btnPeriodoAgregar"
         btnPeriodoAgregar.Padding = New Padding(34, 0, 0, 0)
-        btnPeriodoAgregar.Size = New Size(350, 40)
+        btnPeriodoAgregar.Size = New Size(324, 40)
         btnPeriodoAgregar.TabIndex = 0
         btnPeriodoAgregar.Text = "Agregar"
         btnPeriodoAgregar.TextAlign = ContentAlignment.MiddleLeft
@@ -174,7 +174,7 @@ Partial Class Form1
         btnPeriodo.Location = New Point(0, 710)
         btnPeriodo.Name = "btnPeriodo"
         btnPeriodo.Padding = New Padding(10, 0, 0, 0)
-        btnPeriodo.Size = New Size(350, 45)
+        btnPeriodo.Size = New Size(324, 45)
         btnPeriodo.TabIndex = 5
         btnPeriodo.Text = "Periodo"
         btnPeriodo.TextAlign = ContentAlignment.MiddleLeft
@@ -191,7 +191,7 @@ Partial Class Form1
         panel_foreingKeys.Dock = DockStyle.Top
         panel_foreingKeys.Location = New Point(0, 495)
         panel_foreingKeys.Name = "panel_foreingKeys"
-        panel_foreingKeys.Size = New Size(350, 215)
+        panel_foreingKeys.Size = New Size(324, 215)
         panel_foreingKeys.TabIndex = 4
         ' 
         ' btnCarreraBuscar
@@ -203,7 +203,7 @@ Partial Class Form1
         btnCarreraBuscar.Location = New Point(0, 160)
         btnCarreraBuscar.Name = "btnCarreraBuscar"
         btnCarreraBuscar.Padding = New Padding(34, 0, 0, 0)
-        btnCarreraBuscar.Size = New Size(350, 40)
+        btnCarreraBuscar.Size = New Size(324, 40)
         btnCarreraBuscar.TabIndex = 4
         btnCarreraBuscar.Text = "Buscar"
         btnCarreraBuscar.TextAlign = ContentAlignment.MiddleLeft
@@ -218,7 +218,7 @@ Partial Class Form1
         btnCarraraModificar.Location = New Point(0, 120)
         btnCarraraModificar.Name = "btnCarraraModificar"
         btnCarraraModificar.Padding = New Padding(34, 0, 0, 0)
-        btnCarraraModificar.Size = New Size(350, 40)
+        btnCarraraModificar.Size = New Size(324, 40)
         btnCarraraModificar.TabIndex = 3
         btnCarraraModificar.Text = "Modificar"
         btnCarraraModificar.TextAlign = ContentAlignment.MiddleLeft
@@ -233,7 +233,7 @@ Partial Class Form1
         btnCarraraMostrar.Location = New Point(0, 80)
         btnCarraraMostrar.Name = "btnCarraraMostrar"
         btnCarraraMostrar.Padding = New Padding(34, 0, 0, 0)
-        btnCarraraMostrar.Size = New Size(350, 40)
+        btnCarraraMostrar.Size = New Size(324, 40)
         btnCarraraMostrar.TabIndex = 2
         btnCarraraMostrar.Text = "Mostrar"
         btnCarraraMostrar.TextAlign = ContentAlignment.MiddleLeft
@@ -248,7 +248,7 @@ Partial Class Form1
         btnCarraraBaja.Location = New Point(0, 40)
         btnCarraraBaja.Name = "btnCarraraBaja"
         btnCarraraBaja.Padding = New Padding(34, 0, 0, 0)
-        btnCarraraBaja.Size = New Size(350, 40)
+        btnCarraraBaja.Size = New Size(324, 40)
         btnCarraraBaja.TabIndex = 1
         btnCarraraBaja.Text = "Baja"
         btnCarraraBaja.TextAlign = ContentAlignment.MiddleLeft
@@ -263,7 +263,7 @@ Partial Class Form1
         btnCarraraAgregar.Location = New Point(0, 0)
         btnCarraraAgregar.Name = "btnCarraraAgregar"
         btnCarraraAgregar.Padding = New Padding(34, 0, 0, 0)
-        btnCarraraAgregar.Size = New Size(350, 40)
+        btnCarraraAgregar.Size = New Size(324, 40)
         btnCarraraAgregar.TabIndex = 0
         btnCarraraAgregar.Text = "Agregar"
         btnCarraraAgregar.TextAlign = ContentAlignment.MiddleLeft
@@ -278,7 +278,7 @@ Partial Class Form1
         btnCarrera.Location = New Point(0, 450)
         btnCarrera.Name = "btnCarrera"
         btnCarrera.Padding = New Padding(10, 0, 0, 0)
-        btnCarrera.Size = New Size(350, 45)
+        btnCarrera.Size = New Size(324, 45)
         btnCarrera.TabIndex = 3
         btnCarrera.Text = "Carrera"
         btnCarrera.TextAlign = ContentAlignment.MiddleLeft
@@ -295,7 +295,7 @@ Partial Class Form1
         panel_noforeingKeys.Dock = DockStyle.Top
         panel_noforeingKeys.Location = New Point(0, 233)
         panel_noforeingKeys.Name = "panel_noforeingKeys"
-        panel_noforeingKeys.Size = New Size(350, 217)
+        panel_noforeingKeys.Size = New Size(324, 217)
         panel_noforeingKeys.TabIndex = 2
         ' 
         ' btnModificar
@@ -307,7 +307,7 @@ Partial Class Form1
         btnModificar.Location = New Point(0, 160)
         btnModificar.Name = "btnModificar"
         btnModificar.Padding = New Padding(34, 0, 0, 0)
-        btnModificar.Size = New Size(350, 40)
+        btnModificar.Size = New Size(324, 40)
         btnModificar.TabIndex = 4
         btnModificar.Text = "Modificar"
         btnModificar.TextAlign = ContentAlignment.MiddleLeft
@@ -322,7 +322,7 @@ Partial Class Form1
         btnMostrar.Location = New Point(0, 120)
         btnMostrar.Name = "btnMostrar"
         btnMostrar.Padding = New Padding(34, 0, 0, 0)
-        btnMostrar.Size = New Size(350, 40)
+        btnMostrar.Size = New Size(324, 40)
         btnMostrar.TabIndex = 3
         btnMostrar.Text = "Mostrar"
         btnMostrar.TextAlign = ContentAlignment.MiddleLeft
@@ -337,7 +337,7 @@ Partial Class Form1
         btnBuscar.Location = New Point(0, 80)
         btnBuscar.Name = "btnBuscar"
         btnBuscar.Padding = New Padding(34, 0, 0, 0)
-        btnBuscar.Size = New Size(350, 40)
+        btnBuscar.Size = New Size(324, 40)
         btnBuscar.TabIndex = 2
         btnBuscar.Text = "Buscar"
         btnBuscar.TextAlign = ContentAlignment.MiddleLeft
@@ -352,9 +352,9 @@ Partial Class Form1
         btnBaja.Location = New Point(0, 40)
         btnBaja.Name = "btnBaja"
         btnBaja.Padding = New Padding(34, 0, 0, 0)
-        btnBaja.Size = New Size(350, 40)
+        btnBaja.Size = New Size(324, 40)
         btnBaja.TabIndex = 1
-        btnBaja.Text = "Baja"
+        btnBaja.Text = "Activo o Inactivo"
         btnBaja.TextAlign = ContentAlignment.MiddleLeft
         btnBaja.UseVisualStyleBackColor = True
         ' 
@@ -367,7 +367,7 @@ Partial Class Form1
         btnInsertar.Location = New Point(0, 0)
         btnInsertar.Name = "btnInsertar"
         btnInsertar.Padding = New Padding(34, 0, 0, 0)
-        btnInsertar.Size = New Size(350, 40)
+        btnInsertar.Size = New Size(324, 40)
         btnInsertar.TabIndex = 0
         btnInsertar.Text = "Agregar"
         btnInsertar.TextAlign = ContentAlignment.MiddleLeft
@@ -382,7 +382,7 @@ Partial Class Form1
         btnNoforenKey.Location = New Point(0, 188)
         btnNoforenKey.Name = "btnNoforenKey"
         btnNoforenKey.Padding = New Padding(10, 0, 0, 0)
-        btnNoforenKey.Size = New Size(350, 45)
+        btnNoforenKey.Size = New Size(324, 45)
         btnNoforenKey.TabIndex = 1
         btnNoforenKey.Text = "Docente"
         btnNoforenKey.TextAlign = ContentAlignment.MiddleLeft
@@ -395,7 +395,7 @@ Partial Class Form1
         panel_logo.Dock = DockStyle.Top
         panel_logo.Location = New Point(0, 0)
         panel_logo.Name = "panel_logo"
-        panel_logo.Size = New Size(350, 188)
+        panel_logo.Size = New Size(324, 188)
         panel_logo.TabIndex = 0
         ' 
         ' picLogo
@@ -416,7 +416,7 @@ Partial Class Form1
         panelChildForm.Dock = DockStyle.Fill
         panelChildForm.Location = New Point(350, 0)
         panelChildForm.Name = "panelChildForm"
-        panelChildForm.Size = New Size(1129, 1112)
+        panelChildForm.Size = New Size(1129, 811)
         panelChildForm.TabIndex = 2
         ' 
         ' PictureBox2
@@ -425,7 +425,7 @@ Partial Class Form1
         PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
         PictureBox2.Location = New Point(734, 0)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(393, 1110)
+        PictureBox2.Size = New Size(393, 809)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox2.TabIndex = 2
         PictureBox2.TabStop = False
@@ -434,7 +434,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1479, 1112)
+        ClientSize = New Size(1479, 811)
         Controls.Add(panelChildForm)
         Controls.Add(panel_menu)
         MinimumSize = New Size(1398, 829)

@@ -74,7 +74,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnBaja_Click(sender As Object, e As EventArgs) Handles btnBaja.Click
-        openChildForm(New formCarreraBaja)
+        openChildForm(New formDocenteEliminar)
         hideSubmenu()
     End Sub
 

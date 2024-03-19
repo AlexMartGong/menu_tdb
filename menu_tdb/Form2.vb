@@ -4,6 +4,7 @@ Imports MySql.Data.MySqlClient
 Public Class Form2
     Dim adCon As MySqlConnection
     Private cm As MySqlCommand
+    Private da As MySqlDataAdapter
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
@@ -22,7 +23,7 @@ Public Class Form2
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         Try
-            adCon.Open()
+            adCon.Open
             cm = New MySqlCommand
             cm.Connection = adCon
             cm.CommandType = CommandType.Text
@@ -30,21 +31,25 @@ Public Class Form2
             cm.Parameters.AddWithValue("p_id_docente", CInt(txtFolioDocente.Text))
             cm.Parameters.AddWithValue("p_nombre", txtNombre.Text)
             cm.Parameters.AddWithValue("p_perfil", txtPerfil.Text)
-            cm.ExecuteNonQuery()
+            cm.ExecuteNonQuery
             MsgBox("Datos Guardados")
 
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
-            adCon.Close()
+            adCon.Close
         End Try
-        LimpiarCampos()
+        LimpiarCampos
     End Sub
 
     Private Sub LimpiarCampos()
         txtNombre.Text = ""
         txtPerfil.Text = ""
         txtFolioDocente.Text = ""
+    End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+        Close()
     End Sub
 
 End Class

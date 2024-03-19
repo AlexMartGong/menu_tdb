@@ -32,6 +32,7 @@ Partial Class Form2
         Label4 = New Label()
         Label5 = New Label()
         PictureBox1 = New PictureBox()
+        btnCancelar = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -42,11 +43,11 @@ Partial Class Form2
         btnInsertar.FlatStyle = FlatStyle.Flat
         btnInsertar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnInsertar.ForeColor = Color.White
-        btnInsertar.Location = New Point(1308, 495)
+        btnInsertar.Location = New Point(1122, 495)
         btnInsertar.Name = "btnInsertar"
         btnInsertar.Size = New Size(180, 40)
         btnInsertar.TabIndex = 6
-        btnInsertar.Text = "Insertar"
+        btnInsertar.Text = "Guardar"
         btnInsertar.UseVisualStyleBackColor = False
         ' 
         ' btnExit
@@ -130,12 +131,27 @@ Partial Class Form2
         PictureBox1.TabIndex = 18
         PictureBox1.TabStop = False
         ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnCancelar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnCancelar.FlatStyle = FlatStyle.Flat
+        btnCancelar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnCancelar.ForeColor = Color.White
+        btnCancelar.Location = New Point(1308, 495)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(180, 40)
+        btnCancelar.TabIndex = 19
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1500, 840)
+        Controls.Add(btnCancelar)
         Controls.Add(PictureBox1)
         Controls.Add(Label3)
         Controls.Add(Label5)
@@ -161,4 +177,5 @@ Partial Class Form2
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnCancelar As Button
 End Class
