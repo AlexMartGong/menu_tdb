@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class formPrincipal
     Dim adCon As MySqlConnection
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         hideSubmenu()
@@ -49,13 +49,13 @@ Public Class Form1
     End Sub
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
-        openChildForm(New Form3)
+        openChildForm(New formDocenteBuscar)
 
         hideSubmenu()
     End Sub
 
     Private Sub btnMostrar_Click(sender As Object, e As EventArgs) Handles btnMostrar.Click
-        openChildForm(New formMostrarDocentes)
+        openChildForm(New formDocenteMostrar)
         hideSubmenu()
     End Sub
 
@@ -69,7 +69,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
-        openChildForm(New Form2)
+        openChildForm(New formDocenteInsertar)
         hideSubmenu()
     End Sub
 

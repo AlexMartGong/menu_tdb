@@ -1,7 +1,7 @@
 ﻿Imports System.Security.Cryptography.Pkcs
 Imports MySql.Data.MySqlClient
 
-Public Class Form2
+Public Class formDocenteInsertar
     Dim adCon As MySqlConnection
     Private cm As MySqlCommand
     Private da As MySqlDataAdapter

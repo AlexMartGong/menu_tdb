@@ -48,10 +48,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="formCarrera\" />
-    <Folder Include="formDocente\" />
-    <Folder Include="formPeriodo\" />
-  </ItemGroup>
-
 </Project>
