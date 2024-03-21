@@ -43,7 +43,7 @@ Partial Class formDocenteInsertar
         btnInsertar.FlatStyle = FlatStyle.Flat
         btnInsertar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnInsertar.ForeColor = Color.White
-        btnInsertar.Location = New Point(1122, 495)
+        btnInsertar.Location = New Point(1308, 509)
         btnInsertar.Name = "btnInsertar"
         btnInsertar.Size = New Size(180, 40)
         btnInsertar.TabIndex = 6
@@ -138,14 +138,14 @@ Partial Class formDocenteInsertar
         btnCancelar.FlatStyle = FlatStyle.Flat
         btnCancelar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnCancelar.ForeColor = Color.White
-        btnCancelar.Location = New Point(1308, 495)
+        btnCancelar.Location = New Point(1122, 509)
         btnCancelar.Name = "btnCancelar"
         btnCancelar.Size = New Size(180, 40)
         btnCancelar.TabIndex = 19
         btnCancelar.Text = "Cancelar"
         btnCancelar.UseVisualStyleBackColor = False
         ' 
-        ' Form2
+        ' formDocenteInsertar
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -162,7 +162,7 @@ Partial Class formDocenteInsertar
         Controls.Add(btnExit)
         Controls.Add(btnInsertar)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form2"
+        Name = "formDocenteInsertar"
         Text = "Form2"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

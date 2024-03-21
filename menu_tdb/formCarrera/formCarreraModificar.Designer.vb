@@ -30,6 +30,8 @@ Partial Class formCarreraModificar
         txtNombre = New TextBox()
         btnExit = New Button()
         btnModificar = New Button()
+        btnCancelar = New Button()
+        btnBuscar = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -37,10 +39,9 @@ Partial Class formCarreraModificar
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(11, 45)
-        PictureBox1.Margin = New Padding(2)
+        PictureBox1.Location = New Point(16, 75)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1033, 98)
+        PictureBox1.Size = New Size(1476, 163)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 33
         PictureBox1.TabStop = False
@@ -49,10 +50,9 @@ Partial Class formCarreraModificar
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label5.Location = New Point(27, 211)
-        Label5.Margin = New Padding(2, 0, 2, 0)
+        Label5.Location = New Point(40, 443)
         Label5.Name = "Label5"
-        Label5.Size = New Size(140, 14)
+        Label5.Size = New Size(199, 22)
         Label5.TabIndex = 32
         Label5.Text = "Nombre de la carrera"
         ' 
@@ -60,10 +60,9 @@ Partial Class formCarreraModificar
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label4.Location = New Point(27, 162)
-        Label4.Margin = New Padding(2, 0, 2, 0)
+        Label4.Location = New Point(39, 270)
         Label4.Name = "Label4"
-        Label4.Size = New Size(80, 14)
+        Label4.Size = New Size(113, 22)
         Label4.TabIndex = 31
         Label4.Text = "No. Carrera"
         ' 
@@ -71,20 +70,18 @@ Partial Class formCarreraModificar
         ' 
         txtNoCarrera.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtNoCarrera.Font = New Font("Roboto", 10F)
-        txtNoCarrera.Location = New Point(11, 177)
-        txtNoCarrera.Margin = New Padding(2)
+        txtNoCarrera.Location = New Point(16, 295)
         txtNoCarrera.Name = "txtNoCarrera"
-        txtNoCarrera.Size = New Size(1034, 24)
+        txtNoCarrera.Size = New Size(1475, 32)
         txtNoCarrera.TabIndex = 30
         ' 
         ' txtNombre
         ' 
         txtNombre.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtNombre.Font = New Font("Roboto", 10F)
-        txtNombre.Location = New Point(11, 226)
-        txtNombre.Margin = New Padding(2)
+        txtNombre.Location = New Point(17, 468)
         txtNombre.Name = "txtNombre"
-        txtNombre.Size = New Size(1034, 24)
+        txtNombre.Size = New Size(1475, 32)
         txtNombre.TabIndex = 29
         ' 
         ' btnExit
@@ -93,10 +90,9 @@ Partial Class formCarreraModificar
         btnExit.FlatStyle = FlatStyle.Flat
         btnExit.Font = New Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         btnExit.ForeColor = Color.White
-        btnExit.Location = New Point(11, 11)
-        btnExit.Margin = New Padding(2)
+        btnExit.Location = New Point(16, 18)
         btnExit.Name = "btnExit"
-        btnExit.Size = New Size(84, 30)
+        btnExit.Size = New Size(120, 50)
         btnExit.TabIndex = 28
         btnExit.Text = "X"
         btnExit.UseVisualStyleBackColor = False
@@ -108,20 +104,49 @@ Partial Class formCarreraModificar
         btnModificar.FlatStyle = FlatStyle.Flat
         btnModificar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnModificar.ForeColor = Color.White
-        btnModificar.Location = New Point(919, 254)
-        btnModificar.Margin = New Padding(2)
+        btnModificar.Location = New Point(1314, 514)
         btnModificar.Name = "btnModificar"
-        btnModificar.Size = New Size(126, 24)
+        btnModificar.Size = New Size(180, 40)
         btnModificar.TabIndex = 27
-        btnModificar.Text = "Modificar"
+        btnModificar.Text = "Guardar"
         btnModificar.UseVisualStyleBackColor = False
+        ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnCancelar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnCancelar.FlatStyle = FlatStyle.Flat
+        btnCancelar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnCancelar.ForeColor = Color.White
+        btnCancelar.Location = New Point(1128, 514)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(180, 40)
+        btnCancelar.TabIndex = 34
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = False
+        ' 
+        ' btnBuscar
+        ' 
+        btnBuscar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnBuscar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnBuscar.FlatStyle = FlatStyle.Flat
+        btnBuscar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnBuscar.ForeColor = Color.White
+        btnBuscar.Location = New Point(1309, 261)
+        btnBuscar.Name = "btnBuscar"
+        btnBuscar.Size = New Size(180, 40)
+        btnBuscar.TabIndex = 35
+        btnBuscar.Text = "Buscar"
+        btnBuscar.UseVisualStyleBackColor = False
         ' 
         ' formCarreraModificar
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1051, 520)
+        ClientSize = New Size(1501, 867)
+        Controls.Add(btnBuscar)
+        Controls.Add(btnCancelar)
         Controls.Add(PictureBox1)
         Controls.Add(Label5)
         Controls.Add(Label4)
@@ -130,6 +155,7 @@ Partial Class formCarreraModificar
         Controls.Add(btnExit)
         Controls.Add(btnModificar)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 5, 4, 5)
         Name = "formCarreraModificar"
         Text = "formCarreraModificar"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -144,4 +170,6 @@ Partial Class formCarreraModificar
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents btnExit As Button
     Friend WithEvents btnModificar As Button
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnBuscar As Button
 End Class

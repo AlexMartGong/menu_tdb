@@ -86,7 +86,7 @@ Partial Class formDocenteBuscar
         lblBuscar.TabIndex = 13
         lblBuscar.Text = "Folio Docente"
         ' 
-        ' Form3
+        ' formDocenteBuscar
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
@@ -98,7 +98,7 @@ Partial Class formDocenteBuscar
         Controls.Add(btnBuscar)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form3"
+        Name = "formDocenteBuscar"
         Text = "Form3"
         CType(dgvDatos, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)

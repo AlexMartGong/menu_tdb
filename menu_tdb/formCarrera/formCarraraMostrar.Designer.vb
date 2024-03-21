@@ -25,6 +25,7 @@ Partial Class formCarraraMostrar
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formCarraraMostrar))
         PictureBox1 = New PictureBox()
         dgvDatos = New DataGridView()
+        btnExit = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(dgvDatos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -33,9 +34,9 @@ Partial Class formCarraraMostrar
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(11, 48)
+        PictureBox1.Location = New Point(11, 68)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1474, 143)
+        PictureBox1.Size = New Size(1474, 123)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 15
         PictureBox1.TabStop = False
@@ -50,12 +51,26 @@ Partial Class formCarraraMostrar
         dgvDatos.Size = New Size(1474, 645)
         dgvDatos.TabIndex = 14
         ' 
+        ' btnExit
+        ' 
+        btnExit.BackColor = Color.Red
+        btnExit.FlatStyle = FlatStyle.Flat
+        btnExit.Font = New Font("Roboto", 14F)
+        btnExit.ForeColor = Color.White
+        btnExit.Location = New Point(12, 12)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(111, 50)
+        btnExit.TabIndex = 16
+        btnExit.Text = "X"
+        btnExit.UseVisualStyleBackColor = False
+        ' 
         ' formCarraraMostrar
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1501, 867)
+        Controls.Add(btnExit)
         Controls.Add(PictureBox1)
         Controls.Add(dgvDatos)
         FormBorderStyle = FormBorderStyle.None
@@ -69,4 +84,5 @@ Partial Class formCarraraMostrar
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents dgvDatos As DataGridView
+    Friend WithEvents btnExit As Button
 End Class

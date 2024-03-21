@@ -30,6 +30,10 @@ Partial Class formCarreraBaja
         Label2 = New Label()
         Label1 = New Label()
         txtNoCarrera = New TextBox()
+        btnCancelar = New Button()
+        btnBuscar = New Button()
+        Label3 = New Label()
+        txtNombreCarrera = New TextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -37,10 +41,9 @@ Partial Class formCarreraBaja
         ' 
         PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(11, 45)
-        PictureBox1.Margin = New Padding(2)
+        PictureBox1.Location = New Point(16, 75)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(1033, 94)
+        PictureBox1.Size = New Size(1476, 157)
         PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 14
         PictureBox1.TabStop = False
@@ -51,10 +54,9 @@ Partial Class formCarreraBaja
         btnCerrar.FlatStyle = FlatStyle.Flat
         btnCerrar.Font = New Font("Roboto", 14F)
         btnCerrar.ForeColor = Color.White
-        btnCerrar.Location = New Point(11, 11)
-        btnCerrar.Margin = New Padding(2)
+        btnCerrar.Location = New Point(16, 18)
         btnCerrar.Name = "btnCerrar"
-        btnCerrar.Size = New Size(84, 30)
+        btnCerrar.Size = New Size(120, 50)
         btnCerrar.TabIndex = 13
         btnCerrar.Text = "X"
         btnCerrar.UseVisualStyleBackColor = False
@@ -66,12 +68,11 @@ Partial Class formCarreraBaja
         btnBaja.FlatStyle = FlatStyle.Flat
         btnBaja.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
         btnBaja.ForeColor = Color.White
-        btnBaja.Location = New Point(918, 282)
-        btnBaja.Margin = New Padding(2)
+        btnBaja.Location = New Point(1312, 629)
         btnBaja.Name = "btnBaja"
-        btnBaja.Size = New Size(126, 24)
+        btnBaja.Size = New Size(180, 40)
         btnBaja.TabIndex = 12
-        btnBaja.Text = "Baja"
+        btnBaja.Text = "Guardar"
         btnBaja.UseVisualStyleBackColor = False
         ' 
         ' cbsBaja
@@ -80,20 +81,18 @@ Partial Class formCarreraBaja
         cbsBaja.Font = New Font("Roboto", 10F)
         cbsBaja.FormattingEnabled = True
         cbsBaja.Items.AddRange(New Object() {"activo", "inactivo"})
-        cbsBaja.Location = New Point(11, 255)
-        cbsBaja.Margin = New Padding(2)
+        cbsBaja.Location = New Point(16, 572)
         cbsBaja.Name = "cbsBaja"
-        cbsBaja.Size = New Size(1034, 23)
+        cbsBaja.Size = New Size(1475, 32)
         cbsBaja.TabIndex = 11
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label2.Location = New Point(25, 240)
-        Label2.Margin = New Padding(2, 0, 2, 0)
+        Label2.Location = New Point(36, 547)
         Label2.Name = "Label2"
-        Label2.Size = New Size(36, 14)
+        Label2.Size = New Size(50, 22)
         Label2.TabIndex = 10
         Label2.Text = "Baja"
         ' 
@@ -101,10 +100,9 @@ Partial Class formCarreraBaja
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
-        Label1.Location = New Point(25, 160)
-        Label1.Margin = New Padding(2, 0, 2, 0)
+        Label1.Location = New Point(36, 267)
         Label1.Name = "Label1"
-        Label1.Size = New Size(80, 14)
+        Label1.Size = New Size(113, 22)
         Label1.TabIndex = 9
         Label1.Text = "No. Carrera"
         ' 
@@ -112,18 +110,68 @@ Partial Class formCarreraBaja
         ' 
         txtNoCarrera.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         txtNoCarrera.Font = New Font("Roboto", 10F)
-        txtNoCarrera.Location = New Point(11, 175)
-        txtNoCarrera.Margin = New Padding(2)
+        txtNoCarrera.Location = New Point(16, 292)
         txtNoCarrera.Name = "txtNoCarrera"
-        txtNoCarrera.Size = New Size(1034, 24)
+        txtNoCarrera.Size = New Size(1475, 32)
         txtNoCarrera.TabIndex = 8
+        ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnCancelar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnCancelar.FlatStyle = FlatStyle.Flat
+        btnCancelar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnCancelar.ForeColor = Color.White
+        btnCancelar.Location = New Point(1126, 629)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(180, 40)
+        btnCancelar.TabIndex = 15
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = False
+        ' 
+        ' btnBuscar
+        ' 
+        btnBuscar.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        btnBuscar.BackColor = Color.FromArgb(CByte(255), CByte(78), CByte(100))
+        btnBuscar.FlatStyle = FlatStyle.Flat
+        btnBuscar.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        btnBuscar.ForeColor = Color.White
+        btnBuscar.Location = New Point(1312, 246)
+        btnBuscar.Name = "btnBuscar"
+        btnBuscar.Size = New Size(180, 40)
+        btnBuscar.TabIndex = 16
+        btnBuscar.Text = "Buscar"
+        btnBuscar.UseVisualStyleBackColor = False
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Roboto Medium", 9F, FontStyle.Bold)
+        Label3.Location = New Point(33, 405)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(150, 22)
+        Label3.TabIndex = 18
+        Label3.Text = "Nombre carrera"
+        ' 
+        ' txtNombreCarrera
+        ' 
+        txtNombreCarrera.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtNombreCarrera.Font = New Font("Roboto", 10F)
+        txtNombreCarrera.Location = New Point(13, 430)
+        txtNombreCarrera.Name = "txtNombreCarrera"
+        txtNombreCarrera.Size = New Size(1475, 32)
+        txtNombreCarrera.TabIndex = 17
         ' 
         ' formCarreraBaja
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1051, 520)
+        ClientSize = New Size(1501, 867)
+        Controls.Add(Label3)
+        Controls.Add(txtNombreCarrera)
+        Controls.Add(btnBuscar)
+        Controls.Add(btnCancelar)
         Controls.Add(PictureBox1)
         Controls.Add(btnCerrar)
         Controls.Add(btnBaja)
@@ -132,6 +180,7 @@ Partial Class formCarreraBaja
         Controls.Add(Label1)
         Controls.Add(txtNoCarrera)
         FormBorderStyle = FormBorderStyle.None
+        Margin = New Padding(4, 5, 4, 5)
         Name = "formCarreraBaja"
         Text = "formCarreraBaja"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -146,4 +195,8 @@ Partial Class formCarreraBaja
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtNoCarrera As TextBox
+    Friend WithEvents btnCancelar As Button
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtNombreCarrera As TextBox
 End Class

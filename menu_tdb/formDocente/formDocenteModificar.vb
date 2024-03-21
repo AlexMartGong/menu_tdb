@@ -42,32 +42,6 @@ Public Class formDocenteModificar
         Me.Close()
     End Sub
 
-    Private Sub txtIdDocente_TextChanged(sender As Object, e As EventArgs) Handles txtIdDocente.TextChanged
-        If txtIdDocente.Text.Length >= 1 Then
-            Try
-                Dim folio As Integer
-                If Integer.TryParse(txtIdDocente.Text, folio) Then
-                    Dim sentencia As String = "call spBuscarDocentePorFolio(" & CInt(txtIdDocente.Text) & ")"
-                    adCon.Open()
-                    da = New MySqlDataAdapter(sentencia, adCon)
-                    Dim ds As New DataSet
-                    da.Fill(ds, "entidades")
-
-                    ' Asegúrate de que el DataSet no esté vacío
-                    If ds.Tables("entidades").Rows.Count > 0 Then
-                        ' Asigna los valores a los campos de texto
-                        txtNombre.Text = ds.Tables("entidades").Rows(0)("nombre_docente").ToString()
-                        txtPerfil.Text = ds.Tables("entidades").Rows(0)("perfil").ToString()
-                    End If
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message, MsgBoxStyle.Critical, "Error al buscar docente")
-            Finally
-                adCon.Close()
-            End Try
-        End If
-    End Sub
-
     Private Sub LimpiarCampos()
         txtNombre.Text = ""
         txtPerfil.Text = ""
